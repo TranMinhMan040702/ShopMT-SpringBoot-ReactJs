@@ -1,6 +1,7 @@
 package com.mtshop.dto;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import lombok.Data;
@@ -10,9 +11,9 @@ import lombok.Data;
 public class AbstractDto<T> {
 	private Long id;
 	private String createdBy;
-	private String createdAt;
+	private Date createdAt;
 	private String updatedBy;
-	private String updatedAt;
+	private Date updatedAt;
 	private List<T> listResult = new ArrayList<>();
 
 }
